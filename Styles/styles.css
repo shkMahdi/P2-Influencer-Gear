@@ -16,7 +16,15 @@ html {
 .display-flex {
     display: flex;
 }
-
+.btn-primary {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px 24px;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 40px;
+}
 
 
 /* ---------Specific Styles--------- */
@@ -46,7 +54,32 @@ html {
     cursor: pointer;
 }
 
-
+/* banner */
+.banner {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-container {
+    max-width: 540px;
+}
+.banner-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.banner-des {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.banner-prod {
+    background-image: url(../images/Circle-design.svg);
+}
+.banner-img {
+    max-width: 100%;
+}
 /* ------------responsive------------ */
 /* navbar */
 @media screen and (max-width: 576px) {
