@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* ---------Common Styles------------ */
+.dark-1 {
+    color: #3A3A3A;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+
+/* ---------Specific Styles--------- */
+/* navbar */
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.nav-container {
+    justify-content: space-between;
+}
+.nav-menu {
+    list-style: none;
+    gap: 34px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ------------responsive------------ */
+/* navbar */
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .nav-menu {
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+    .nav-menu {
+        margin-top: 1rem;
+        gap: 10px;
+    }
+}
