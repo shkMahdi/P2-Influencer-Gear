@@ -16,6 +16,7 @@ html {
 .display-flex {
     display: flex;
 }
+
 .btn-primary {
     font-size: 1rem;
     font-weight: 700;
@@ -35,19 +36,23 @@ html {
     padding-top: 80px;
     padding-bottom: 40px;
 }
+
 .nav-container {
     justify-content: space-between;
 }
+
 .nav-menu {
     list-style: none;
     gap: 34px;
 }
+
 .nav-menu a {
     text-decoration: none;
     color: #3A3A3A;
     font-size: 1rem;
     font-weight: 600;
 }
+
 .nav-logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -61,38 +66,65 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
 .banner-container {
     max-width: 540px;
 }
+
 .banner-title {
     font-size: 3.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
 .banner-des {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
+
 .banner-prod {
     background-image: url(../images/Circle-design.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .banner-img {
     max-width: 100%;
     padding: 1.8rem 1.8rem 1.8rem 3px;
 }
-/* ------------responsive------------ */
+
+/*------------e-com-platforms-------- */
+.e-com-platforms {
+    max-width: 1110px;
+    padding: 35px 62px;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 1px solid rgba(192, 204, 218, 0.6);
+}
+
+.e-com-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+.e-com-container img {
+    max-width: 100%;
+}
+
+/* ===============responsive=============== */
 /* navbar */
 @media screen and (max-width: 576px) {
+
     .nav-container,
     .nav-menu {
         flex-direction: column;
         max-width: 100%;
         text-align: center;
     }
+
     .nav-menu {
         margin-top: 1rem;
         gap: 10px;
@@ -105,11 +137,29 @@ html {
         flex-direction: column-reverse;
         padding: 3%;
     }
+
     .banner-container {
         text-align: center;
     }
+
     .banner-title {
         font-size: 1.75rem;
         margin-top: 15px;
+    }
+}
+
+/* e-com-platforms */
+@media screen and (max-width: 576px) {
+    .e-com-platforms {
+        border: none;
+        margin-top: 25px;
+    }
+
+    .e-com-container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 25px;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
