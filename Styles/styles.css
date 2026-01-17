@@ -76,9 +76,13 @@ html {
 }
 .banner-prod {
     background-image: url(../images/Circle-design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .banner-img {
     max-width: 100%;
+    padding: 1.8rem 1.8rem 1.8rem 3px;
 }
 /* ------------responsive------------ */
 /* navbar */
@@ -92,5 +96,20 @@ html {
     .nav-menu {
         margin-top: 1rem;
         gap: 10px;
+    }
+}
+
+/* banner */
+@media screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column-reverse;
+        padding: 3%;
+    }
+    .banner-container {
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 1.75rem;
+        margin-top: 15px;
     }
 }
