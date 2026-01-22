@@ -105,14 +105,56 @@ html {
 }
 
 .e-com-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 1rem;
 }
 
 .e-com-container img {
     max-width: 100%;
 }
+
+/* -----------Featured Products------- */
+#featured-products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.featured-container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.f-heading {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.featured-info {
+    align-content: center;
+}
+
+.f-des {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 28px;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+.f-btn {
+    border-radius: 0px;
+}
+
+.featured-container {
+    display: flex;
+    gap: 96px;
+}
+
+/* -----------Footer--------------- */
 
 footer {
     background-color: #0A0826;
@@ -121,24 +163,29 @@ footer {
     padding-top: 30px;
     padding-bottom: 50px;
 }
+
 .footer-container {
     max-width: 262px;
     text-align: center;
     margin: 0 auto;
 }
+
 .footer-heading {
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
 }
+
 .copy-right {
     font-size: .8rem;
     font-weight: 700;
     color: white;
 }
+
 .socials {
     padding-top: 17px;
 }
+
 .socials a {
     margin-right: 16px;
     margin-top: 17px;
@@ -186,10 +233,39 @@ footer {
     }
 
     .e-com-container {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        gap: 25px;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-content: start;
     }
+
+    .e-com-platforms {
+        max-width: 1110px;
+        padding: 40px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    .e-com-container img {
+        max-width: 20%;
+    }
+
+    /* Featured Products */
+    .featured-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #featured-products {
+        padding: 30px 15px;
+    }
+
+    .featured-info {
+        text-align: center;
+    }
+
+    .f-heading {
+        font-size: 1.5rem;
+    }
+
 }
